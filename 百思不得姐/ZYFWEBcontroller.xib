@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZYFWEBcontroller">
+            <connections>
+                <outlet property="houtui" destination="B6Y-hL-lcJ" id="gBn-RR-dOE"/>
+                <outlet property="qianjin" destination="nUC-hE-igX" id="RcI-9m-jGV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webview" destination="ntx-lI-s3k" id="aJq-8D-iDy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntx-lI-s3k">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="qJh-Uk-HDN"/>
+                    </connections>
+                </webView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFd-6f-1dl">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <items>
+                        <barButtonItem enabled="NO" title="后退" id="B6Y-hL-lcJ">
+                            <connections>
+                                <action selector="back" destination="-1" id="0IX-tP-19x"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" title="前进" id="nUC-hE-igX">
+                            <connections>
+                                <action selector="firward" destination="-1" id="UyF-tL-NQ4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="69K-Ry-iWR"/>
+                        <barButtonItem systemItem="refresh" id="zM4-dg-QiX">
+                            <connections>
+                                <action selector="reload:" destination="-1" id="44J-An-t2f"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nFd-6f-1dl" secondAttribute="bottom" id="7Yo-Qc-mCe"/>
+                <constraint firstItem="ntx-lI-s3k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xse-bq-Laz"/>
+                <constraint firstItem="nFd-6f-1dl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zax-4R-ovR"/>
+                <constraint firstAttribute="trailing" secondItem="nFd-6f-1dl" secondAttribute="trailing" id="gjP-iI-Vri"/>
+                <constraint firstItem="ntx-lI-s3k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vYf-QX-eUA"/>
+                <constraint firstItem="nFd-6f-1dl" firstAttribute="top" secondItem="ntx-lI-s3k" secondAttribute="bottom" id="w6E-dQ-cbR"/>
+                <constraint firstAttribute="trailing" secondItem="ntx-lI-s3k" secondAttribute="trailing" id="yod-Si-YKU"/>
+            </constraints>
+            <point key="canvasLocation" x="271" y="340"/>
+        </view>
+    </objects>
+</document>
