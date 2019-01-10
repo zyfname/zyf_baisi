@@ -30,7 +30,7 @@
     scrollView.frame = [UIScreen mainScreen].bounds;
     [self.view insertSubview:scrollView atIndex:0];
     
-    // scrollView.backgroundColor = [UIColor redColor];
+     scrollView.backgroundColor = [UIColor whiteColor];
     // scrollView.frame = self.view.bounds;
     // scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
